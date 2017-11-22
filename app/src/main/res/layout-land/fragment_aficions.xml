@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jose.examen.AficionsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="30dp"
+        android:text="Aficions"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/textView5"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Lectures" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonLlibres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Llibres" />
+
+        <RadioButton
+            android:id="@+id/radioButtonRevistes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Revistes" />
+
+        <RadioButton
+            android:id="@+id/radioButtonXarxes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Xarxes Socials" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Puntuacion"
+        android:layout_below="@+id/radioGroup2"
+        android:layout_centerHorizontal="true" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/saveAficions"
+        android:layout_alignEnd="@+id/radioGroup2"
+        android:layout_marginEnd="69dp" />
+
+    <Button
+        android:id="@+id/saveAficions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desar Dades"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7"
+        android:layout_marginStart="56dp" />
+</RelativeLayout>

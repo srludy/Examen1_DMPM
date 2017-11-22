@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jose.examen.DadesPersonalsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Dades Personals"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="edad"
+        android:layout_alignBaseline="@+id/txtEdad"
+        android:layout_alignBottom="@+id/txtEdad"
+        android:layout_alignStart="@+id/txtNom" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="28dp"
+        android:text="Sexo" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/radioButtonMascle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mascle" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFemella"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Femella" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/txtNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginEnd="74dp"
+        android:layout_marginTop="13dp"
+        android:elevation="1dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nom y Congnoms" />
+
+    <EditText
+        android:id="@+id/txtEdad"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/radioGroup"
+        android:layout_below="@+id/txtNom"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginTop="24dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:text="Desar Dades" />
+
+</RelativeLayout>
